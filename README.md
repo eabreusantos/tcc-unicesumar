@@ -9,6 +9,9 @@ Projeto de software construido para o trabalho de conclusão do curso de Bachare
 
 Após realizar a instalação do banco de dados, altere as configurações de conexão com a base dados no arquivo .env que se encontra no diretório /consultaweb-api/
 
+É necessário realizar a migração da estrutura da base para o banco de dados implatando.
+Pegue o conteúdo do arquivo /consultaweb-api/migration.sql e rode como commando no banco de dados implantando.
+
 ## Implantando
 
 Instale as dependências utilizando o NPM na pasta raiz para instalar as dependencias da interface de usuário:
