@@ -1,32 +1,43 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Introdução
+Projeto de software construido para o trabalho de conclusão do curso de Bacharel em Engenharia de Software pela Unicesumar.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Requisitos 
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+- Necessário ter instalado NodeJS (versão 16) e NPM (Tutorial de como instalar: [Linux](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)) | [Mac](https://www.webucator.com/article/how-to-install-nodejs-on-a-mac/) | [Windows](https://phoenixnap.com/kb/install-node-js-npm-on-windows)
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- Necessário ter instalado um banco de dados Mysql (versão mais recente) para que a aplicação se conecte e persista os dados. [Como instalar](https://hevodata.com/learn/installing-mysql-on-ubuntu-20-04/)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Após realizar a instalação do banco de dados, altere as configurações de conexão com a base dados no arquivo .env que se encontra no diretório /consultaweb-api/
 
+## Implantando
 
-# To Run the App
+Instale as dependências utilizando o NPM na pasta raiz para instalar as dependencias da interface de usuário:
 
-## Requirements
- - NPM 8.11+
- - NodeJS 16.16+
+```
+    npm install
+```
 
-# Run
-Inside project folder run:
-1) npm install
-2) npm run dev
+Instale as dependências utilizando o NPM na pasta /consultaweb-api para instalar as dependencias da api:
+
+```
+    npm install -g nodemon 
+```
+e o comando
+
+```
+    npm install 
+```
+
+Após instalar as dependências, suba a api rodando o comando no diretório /consultaweb-api:
+
+```
+    npm run start
+```
+
+Após, suba a interface de usuário rodando o comando na pasta raiz:
+
+```
+    npm run dev
+```
+
+Após o termino do comando um endereço irá ser informado no terminal para acessar a aplicação.
